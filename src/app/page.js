@@ -248,7 +248,7 @@ export default function Home() {
             <p>
               Cocoon is a <strong>career development app</strong> that harnesses
               the <strong>power of AI</strong>. It scans resumes and analyzes
-              skills to recommend courses and programs relevant to users'
+              skills to recommend courses and programs relevant to users&apos;
               desired job industry. Cocoon aims to not only{" "}
               <strong>help people realize their full potential</strong>, but
               also <strong>provide a comprehensive roadmap</strong> to achieve
