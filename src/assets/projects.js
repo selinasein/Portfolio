@@ -40,4 +40,13 @@ export const projects = [
     skills:
       "  TypeScript, Next.js, PostgreSQL, AWS Lambda, Redux, AmazonTextract, LangChain, Tailwind CSS, OpenAI API",
   },
+  {
+    id: 5,
+    title: "Coming Soon",
+    description: "",
+    image: "",
+    explanation: "",
+    link: "",
+    skills: "",
+  },
 ];
