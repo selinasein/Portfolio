@@ -38,15 +38,19 @@ export const projects = [
       "Cocoon is a career development app that harnesses the power of AI. It scans resumes and analyzes skills to recommend courses and programs relevant to users' desired job industry. Cocoon aims to not only help people realize their full potential, but also provide a comprehensive roadmap to achieve their career goals.",
     link: "https://www.cocoon.quest/",
     skills:
-      "  TypeScript, Next.js, PostgreSQL, AWS Lambda, Redux, AmazonTextract, LangChain, Tailwind CSS, OpenAI API",
+      "TypeScript, Next.js, PostgreSQL, AWS Lambda, Redux, AmazonTextract, LangChain, Tailwind CSS, OpenAI API",
   },
   {
     id: 5,
-    title: "Coming Soon",
-    description: "",
-    image: "",
-    explanation: "",
-    link: "",
-    skills: "",
+    title: "Bookie",
+    description:
+      "Bookie is a web app that lets users search, annotate, and share books, with solid AWS backend and secure authentication.",
+    image: "/images/bookie/bookie_thumbnail.png",
+    explanation:
+      "Bookie is a comprehensive application designed for book enthusiasts. It allows users to search for books, make personalized notes, and share insights with a community. The backend is built with AWS services, including API Gateway and Lambda functions, and uses TypeScript and C# to handle requests. The frontend, on the other hand, uses React to ensure a seamless user interface that interacts efficiently with the backend. User authentication is managed through Kinde, providing data and activity security across the platform. The app also features a robust database structure that houses relational data like books and user notes, and incorporates AWS SES.",
+    link: "https://d154jq4ocmyddu.cloudfront.net/",
+    skills:
+      "React.js, AWS Lambda and API Gateway, TypeScript, C#, Kinde, Relational Database Management, AWS SES (Email service integration), RESTful API design, Full-stack development",
+    images: ["/images/bookie/homepage.png", "/images/bookie/landingpage.png"],
   },
 ];

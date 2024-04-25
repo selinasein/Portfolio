@@ -21,16 +21,17 @@ export default function Projects() {
           Projects*
         </h2>
       </div>
-      <div className="mt-5 md:mt-10 rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden md:col-span-2 lg:col-span-3">
-        <InfiniteMovingCards items={skillset} direction="right" speed="slow" />
+      <div className="mx-10 md:m-0 mt-5 md:mt-10 rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden md:col-span-2 lg:col-span-3">
+        <InfiniteMovingCards items={skillset} direction="left" speed="slow" />
         <BentoGrid className="max-w-6xl mx-auto mt-3 md:mt-10">
           {projects.map((project, i) => (
             <BentoGridItem
               key={i}
+              id={project.id}
               title={project.title}
               description={project.description}
               header={project.image}
-              link={project.link}
+              skills={project.skills}
               className={
                 i === 3 || i === 6 ? "md:col-span-2 m-5 md:m-0" : "m-5 md:m-0"
               }

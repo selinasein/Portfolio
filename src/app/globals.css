@@ -5,11 +5,15 @@
 p span {
   display: block;
 }
+:root {
+  --emerald-500: #34d399;
+}
 
 .title-header {
   animation: fade-out linear;
   animation-timeline: view();
   animation-range: exit -200px;
+  animation: reveal 5s;
 }
 
 .about-me {
@@ -18,10 +22,14 @@ p span {
   animation-range: entry;
 }
 
-.project-title {
+.fade-in-when-visible {
   animation: fade-in linear;
   animation-timeline: view();
   animation-range: entry;
+}
+
+.up-button {
+  animation: jump 1s infinite;
 }
 
 @keyframes fade-out {
@@ -36,5 +44,29 @@ p span {
   }
   to {
     opacity: 100;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
