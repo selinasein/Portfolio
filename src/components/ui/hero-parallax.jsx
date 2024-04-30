@@ -123,9 +123,12 @@ export const ProjectDetail = ({ project }) => {
         {project.description}
       </p>
       <div className="mt-4 md:mx-32 items-center justify-center flex flex-row flex-wrap gap-3">
-        {project.skills.map((skill) => {
+        {project.skills.map((skill, index) => {
           return (
-            <div className="flex flex-wrap text-center items-center justify-center px-4 py-2 rounded-md border border-black bg-white text-neutarl-700 text-xs shadow-[4px_4px_0px_0px_rgba(0,0,0)]">
+            <div
+              className="flex flex-wrap text-center items-center justify-center px-4 py-2 rounded-md border border-black bg-white text-neutarl-700 text-xs shadow-[4px_4px_0px_0px_rgba(0,0,0)]"
+              key={index}
+            >
               {skill}
             </div>
           );
