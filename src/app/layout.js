@@ -19,9 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="h-screen">
-        <div
-          className={`${inter.className} ${cormorant.variable} py-3 px-5 md:py-5 md:px-10`}
-        >
+        <div className={`${inter.className} ${cormorant.variable}`}>
           {children}
         </div>
         <Footer />

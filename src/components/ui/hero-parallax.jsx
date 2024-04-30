@@ -134,12 +134,12 @@ export const ProjectDetail = ({ project }) => {
           );
         })}
       </div>
-      <div className="rounded-xl overflow-hidden">
+      <div className="rounded-xl overflow-hidden py-3 px-5 md:py-0 md:px-0">
         <Link
           href={project.link}
           className="flex items-center justify-center mt-10 md:mt-16 text-lg md:text-2xl font-bold rounded-xl"
         >
-          <div className="relative rounded-xl shadow-2xl md:w-1/2 group">
+          <div className="relative rounded-xl shadow-lg md:shadow-2xl md:w-1/2 group">
             <img
               src={landingPageImage.img}
               alt={project.title}
@@ -161,7 +161,7 @@ export const ProjectDetail = ({ project }) => {
         </Link>
       </div>
       <p
-        className={`${overpass.className} mt-16 md:mx-40 text-sm md:text-base  dark:text-neutral-200`}
+        className={`${overpass.className} mt-16 md:mx-40 text-sm md:text-base  dark:text-neutral-200 py-3 px-5 md:py-0 md:px-0`}
       >
         {project.explanation}
       </p>
@@ -170,7 +170,6 @@ export const ProjectDetail = ({ project }) => {
 };
 
 export const ProductCard = ({ project, image, translate, i }) => {
-  console.log(image);
   return (
     <motion.div
       style={{

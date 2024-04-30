@@ -19,7 +19,7 @@ export default function PostPage({ params }) {
 
   return (
     <div className="">
-      <header className="m-auto flex">
+      <header className="m-auto flex py-3 px-5 md:py-5 md:px-10">
         <Link
           href={"/"}
           className={`text-lg md:text-2xl ${overpass.className} font-bold mt-5 uppercase flex-auto`}
