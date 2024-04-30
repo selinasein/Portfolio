@@ -22,7 +22,7 @@ export const BentoGridItem = ({
   id,
   title,
   description,
-  header,
+  thumbnail,
   skills,
 }) => {
   return (
@@ -37,9 +37,9 @@ export const BentoGridItem = ({
         href={`/projects/${id}`}
         className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"
       >
-        {header ? (
+        {thumbnail ? (
           <img
-            src={header}
+            src={thumbnail}
             alt={title}
             style={{
               width: "100%",

@@ -20,7 +20,7 @@ const scrollToTop = () => {
 
 export default function Footer() {
   return (
-    <footer className="w-full text-center mt-10 p-5 bg-slate-100 relative">
+    <footer className="w-full text-center mt-10 p-5 bg-slate-100  inset-x-0 bottom-0 relative">
       <button
         className="absolute right-5 bottom-20 w-10 up-button"
         onClick={scrollToTop}

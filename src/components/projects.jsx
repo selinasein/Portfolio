@@ -30,7 +30,7 @@ export default function Projects() {
               id={project.id}
               title={project.title}
               description={project.description}
-              header={project.image}
+              thumbnail={project.thumbnail}
               skills={project.skills}
               className={
                 i === 3 || i === 6 ? "md:col-span-2 m-5 md:m-0" : "m-5 md:m-0"

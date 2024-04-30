@@ -5,8 +5,7 @@ import { Overpass } from "next/font/google";
 import { Cormorant } from "next/font/google";
 import Link from "next/link";
 import { getProjectById } from "@/assets/helpers";
-import { TracingBeam } from "@/components/ui/tracing-beam";
-import Image from "next/image";
+import { HeroParallax } from "@/components/ui/hero-parallax";
 
 const overpass = Overpass({
   subsets: ["latin"],
@@ -15,17 +14,11 @@ const overpass = Overpass({
   variable: "--oxygen",
 });
 
-const cormorant = Cormorant({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--cormorant",
-});
-
 export default function PostPage({ params }) {
   const project = getProjectById(params.id);
 
   return (
-    <>
+    <div className="">
       <header className="m-auto flex">
         <Link
           href={"/"}
@@ -47,34 +40,12 @@ export default function PostPage({ params }) {
           </li>
         </ul>
       </header>
-      <div className={`mt-10 text-center`}>
-        <h1 className={`text-7xl ${cormorant.className}`}>{project.title}*</h1>
-        <TracingBeam className="px-6">
-          <div className="p-5">
-            <Image
-              src={project.images[0]}
-              alt={project.title}
-              width={1375}
-              height={738}
-              className="rounded-lg shadow-lg w-full"
-            />
-            <Image
-              src={project.images[0]}
-              alt={project.title}
-              width={1375}
-              height={738}
-              className="rounded-lg shadow-lg w-full"
-            />
-            <Image
-              src={project.images[0]}
-              alt={project.title}
-              width={1375}
-              height={738}
-              className="rounded-lg shadow-lg w-full"
-            />
-          </div>
-        </TracingBeam>
+
+      <div className={`text-center items-center justify-center`}>
+        <div>
+          <HeroParallax project={project} />
+        </div>
       </div>
-    </>
+    </div>
   );
 }
