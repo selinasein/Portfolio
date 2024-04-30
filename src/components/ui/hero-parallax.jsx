@@ -113,7 +113,7 @@ export const ProjectDetail = ({ project }) => {
   return (
     <div className="max-w-7xl relative w-full top-0 text-center flex justify-center items-center flex-col z-10">
       <h1
-        className={`${cormorant.className} text-2xl md:text-9xl font-bold dark:text-white`}
+        className={`${cormorant.className} text-7xl md:text-9xl font-bold dark:text-white`}
       >
         {project.title}*
       </h1>
@@ -122,7 +122,7 @@ export const ProjectDetail = ({ project }) => {
       >
         {project.description}
       </p>
-      <div className="mt-4 mx-32 items-center justify-center flex flex-row flex-wrap gap-3">
+      <div className="mt-4 md:mx-32 items-center justify-center flex flex-row flex-wrap gap-3">
         {project.skills.map((skill) => {
           return (
             <div className="flex flex-wrap text-center items-center justify-center px-4 py-2 rounded-md border border-black bg-white text-neutarl-700 text-xs shadow-[4px_4px_0px_0px_rgba(0,0,0)]">
@@ -134,9 +134,9 @@ export const ProjectDetail = ({ project }) => {
       <div className="rounded-xl overflow-hidden">
         <Link
           href={project.link}
-          className="flex items-center justify-center mt-16 text-lg md:text-2xl font-bold rounded-xl"
+          className="flex items-center justify-center mt-10 md:mt-16 text-lg md:text-2xl font-bold rounded-xl"
         >
-          <div className="relative rounded-xl shadow-2xl w-1/2 group">
+          <div className="relative rounded-xl shadow-2xl md:w-1/2 group">
             <img
               src={landingPageImage.img}
               alt={project.title}
@@ -151,14 +151,14 @@ export const ProjectDetail = ({ project }) => {
               <span
                 className={`${overpass.className} text-black text-lg font-semibold`}
               >
-                Visit the website
+                Visit the Website!
               </span>
             </div>
           </div>
         </Link>
       </div>
       <p
-        className={`${overpass.className} mt-16 mx-40 text-base  dark:text-neutral-200`}
+        className={`${overpass.className} mt-16 md:mx-40 text-sm md:text-base  dark:text-neutral-200`}
       >
         {project.explanation}
       </p>
