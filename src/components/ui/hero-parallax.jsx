@@ -111,7 +111,7 @@ export const ProjectDetail = ({ project }) => {
     (image) => image.title === "Landing Page"
   );
   return (
-    <div className="max-w-7xl relative w-full top-0 text-center flex justify-center items-center flex-col z-10">
+    <div className="relative w-full top-0 text-center flex justify-center items-center flex-col z-10">
       <h1
         className={`${cormorant.className} text-7xl md:text-9xl font-bold dark:text-white`}
       >
