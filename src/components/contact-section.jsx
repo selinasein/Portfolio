@@ -20,7 +20,9 @@ export default function ContactSection() {
   return (
     <>
       <div className="md:col-span-2 lg:col-span-3 text-center mb-10">
-        <h2 className={`${cormorant.className} text-8xl md:text-9xl`}>
+        <h2
+          className={`${cormorant.className} text-8xl md:text-9xl text-black dark:text-gray-300`}
+        >
           Contact*
         </h2>
       </div>

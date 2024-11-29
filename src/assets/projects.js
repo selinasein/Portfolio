@@ -1,43 +1,76 @@
 export const projects = [
   {
-    id: 1,
-    title: "GSA Homepage Rebuild",
-    description: "Improvement of the GSA homepage",
-    thumbnail: "/images/gsa-rebuild/GSA-rebuild.png",
+    id: 6,
+    title: "Arkhet",
+    description:
+      "Arkhet is a generative product design tool using generative AI that enables product teams to rapidly test more ideas, accelerating prototype development in a fraction of the time.",
+    thumbnail: "/images/arkhet/landingpage.png",
     explanation:
-      "A rebuild of the GSA homepage was carried out using JavaScript, Next.js, Tailwind CSS, and Framer Motion. The website now features a responsive design with a modern aesthetic.",
-    link: "https://acit-4770-p3-selinasein-hzojn32wz-selina-seins-projects.vercel.app/",
+      "Arkhet is a platform that accelerates product discovery by transforming wireframes and style guides into pixel-perfect, interactive prototypes. I contributed to developing features like seamless integration of design systems, a drag-and-drop interface for intuitive prototyping, and real-time styling updates using TypeScript, React, and Tailwind CSS. My work focused on ensuring prototypes remained 100% consistent with style guides, streamlining ideation, and enabling rapid iteration for product-market fit. By leveraging technologies like Apollo Client and AWS Bedrock for efficient data handling, I helped empower teams to build and validate products faster and with greater precision.",
+    link: "https://arkhet.com/",
     skills: [
-      "Fully Responsive",
-      "JavaScript",
-      "Next",
+      "TypeScript",
+      "React.js",
       "Tailwind CSS",
-      "Framer-motion",
+      "PostgreSQL",
+      "Drizzle",
+      "AWS Bedrock",
+      "Claude AI",
+      "LangChain/LangGraph",
+      "Full-stack development",
     ],
     images: [
       {
         title: "Landing Page",
-        img: "/images/gsa-rebuild/landingpage.png",
+        img: "/images/arkhet/landingpage.png",
       },
       {
-        title: "Items Option",
-        img: "/images/gsa-rebuild/item-option.png",
+        title: "Website",
+        img: "/images/arkhet/website1.png",
       },
       {
-        title: "Footer",
-        img: "/images/gsa-rebuild/footer.png",
+        title: "Website2",
+        img: "/images/arkhet/website2.png",
       },
-      {
-        title: "Item List",
-        img: "/images/gsa-rebuild/item-list.png",
-      },
-      { title: "Browse Items", img: "/images/gsa-rebuild/browse-items.png" },
     ],
   },
   {
-    id: 2,
+    id: 5,
+    title: "Bulletproof Studio Tools",
+    description:
+      "A comprehensive operations software for VFX production, streamlining workflows, budgeting, and communication for artists and producers.",
+    thumbnail: "/images/bulletproof/bulletproof_thumbnail.png",
+    explanation:
+      "Whether you are an established VFX Supervisor or VFX Producer, a start-up VFX Studio, or a Hollywood Entertainment Executive creating original content, this tool brings added transparency to creative team planning, feedback, and utilization. The comprehensive budgeting features provide accuracy for predicting overages based on change orders, easy tax credit labor cost and fringe calculations. For 2D and 3D artists, it helps prioritize shots and streamlines feedback so that you can focus on your craft and deliver excellent outcomes on time for deliveries. You will never use a spreadsheet again to manage your VFX Budgets!",
+    link: "https://www.bulletproofstudiotools.com/",
+    skills: [
+      "TypeScript",
+      "React.js",
+      "Apollo Client",
+      "Material UI (MUI)",
+      "GraphQL",
+      "Full-stack development",
+    ],
+    images: [
+      {
+        title: "Landing Page",
+        img: "/images/bulletproof/landingpage.png",
+      },
+      {
+        title: "Website",
+        img: "/images/bulletproof/website2.png",
+      },
+      {
+        title: "Website2",
+        img: "/images/bulletproof/website3.png",
+      },
+    ],
+  },
+  {
+    id: 1,
     title: "Bucketed",
-    description: "Social networking app for people with bucket lists",
+    description:
+      "Minimalistic social networking app for sharing bucket lists with photos.",
     thumbnail: "/images/bucketed/bucketed-thumbnail.png",
     explanation:
       "Bucketed is a social networking app tailored for people with bucket lists. Users can create these lists and share them with their friends. The app features an achievement progress bar and engaging animations to motivate users towards their goals. Once goals are achieved, users can share their accomplishment photos with others.",
@@ -69,33 +102,6 @@ export const projects = [
     ],
   },
   {
-    id: 3,
-    title: "Nibble Nook",
-    description: "AI Recipe Generator",
-    thumbnail: "/images/nibble-nook/nibblenook.png",
-    explanation:
-      "Nibble Nook is an AI recipe generator that provides users with a list of recipes based on the ingredients they have in their pantry.",
-    link: "https://recipemaker-k8mt.onrender.com/",
-    skills: [
-      "Axios",
-      "OpenAI API",
-      "Docker",
-      "React",
-      "Vite",
-      "TypeScript",
-      "TailwindCSS",
-    ],
-    images: [
-      { title: "Landing Page", img: "/images/nibble-nook/landingpage.png" },
-      { title: "Result Page", img: "/images/nibble-nook/result.png" },
-      {
-        title: "AI generating Recipe",
-        img: "/images/nibble-nook/ai-in-progress.png",
-      },
-      { title: "Filled Inputs", img: "/images/nibble-nook/filledinput.png" },
-    ],
-  },
-  {
     id: 4,
     title: "Cocoon",
     description: "AI powered career development app",
@@ -124,7 +130,34 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 2,
+    title: "Nibble Nook",
+    description: "AI Recipe Generator",
+    thumbnail: "/images/nibble-nook/nibblenook.png",
+    explanation:
+      "Nibble Nook is an AI recipe generator that provides users with a list of recipes based on the ingredients they have in their pantry.",
+    link: "https://recipemaker-k8mt.onrender.com/",
+    skills: [
+      "Axios",
+      "OpenAI API",
+      "Docker",
+      "React",
+      "Vite",
+      "TypeScript",
+      "TailwindCSS",
+    ],
+    images: [
+      { title: "Landing Page", img: "/images/nibble-nook/landingpage.png" },
+      { title: "Result Page", img: "/images/nibble-nook/result.png" },
+      {
+        title: "AI generating Recipe",
+        img: "/images/nibble-nook/ai-in-progress.png",
+      },
+      { title: "Filled Inputs", img: "/images/nibble-nook/filledinput.png" },
+    ],
+  },
+  {
+    id: 3,
     title: "Bookie",
     description:
       "Bookie is a web app that lets users search, annotate, and share books, with solid AWS backend and secure authentication.",

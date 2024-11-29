@@ -3,6 +3,7 @@
 import React from "react";
 import { Overpass } from "next/font/google";
 import Link from "next/link";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 const overpass = Overpass({
   subsets: ["latin"],
@@ -13,13 +14,16 @@ const overpass = Overpass({
 
 export default function Navbar() {
   return (
-    <header className="m-auto flex py-3 px-5 md:py-5 md:px-10">
+    <header className="m-auto flex py-3 px-5 md:py-5 md:px-10 dark:text-gray-300 text-gray-800 bg-transparent">
       <Link
         href={"/"}
         className={`text-lg md:text-2xl ${overpass.className} font-bold mt-5 uppercase flex-auto`}
       >
         <h1>Selina Sein Park</h1>
       </Link>
+      <div className="p-5">
+        <ThemeSwitcher />
+      </div>
 
       <ul
         className={`menu menu-vertical rounded-box relative place-self-end md:ml-auto text-sm md:text-lg ${overpass.className} font-bold uppercase`}

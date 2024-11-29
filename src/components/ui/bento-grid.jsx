@@ -51,16 +51,18 @@ export const BentoGridItem = ({
         ) : null}
       </div>
 
-      <div className="group-hover/bento:translate-x-2 transition duration-200">
-        <div className="font-sans text-lg font-bold text-neutral-600 dark:text-neutral-200 mb-2">
-          {title}
-        </div>
-        <div className="font-sans text-sm font-normal text-neutral-600 dark:text-neutral-300 mb-2">
-          {description}
-        </div>
-        <div className="font-sans from-accent-content text-sky-900 text-xs dark:text-neutral-300 mb-2">
-          {skills}
-        </div>
+      <div className="font-sans text-lg font-bold text-neutral-600 dark:text-neutral-200 mb-2">
+        {title}
+      </div>
+      <div className="font-sans text-sm text-neutral-600 dark:text-neutral-300 mb-2 font-semibold">
+        {description}
+      </div>
+      <div className="font-sans text-neutral-700 dark:text-neutral-300 text-xs mb-2 flex flex-wrap">
+        {skills.map((skill, index) => (
+          <span key={index} className="mr-2 mb-1">
+            {skill}
+          </span>
+        ))}
       </div>
     </Link>
   );

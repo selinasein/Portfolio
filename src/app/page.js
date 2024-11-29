@@ -44,7 +44,7 @@ const navItems = [
 
 export default function Home() {
   return (
-    <>
+    <div className="dark:bg-zinc-900 bg-slate-200">
       {/* top navigation */}
       <Toaster />
       <FloatingNav navItems={navItems} />
@@ -69,7 +69,7 @@ export default function Home() {
       {/* Projects */}
       <section
         id="projects"
-        className="fade-in-when-visible mt-20 mb-48 grid md:grid-cols-2 lg:grid-cols-3"
+        className="fade-in-when-visible mt-20 mb-48 grid md:grid-cols-2 lg:grid-cols-3 "
       >
         <Projects />
       </section>
@@ -78,6 +78,6 @@ export default function Home() {
       <section id="contact" className="fade-in-when-visible mt-20">
         <ContactSection />
       </section>
-    </>
+    </div>
   );
 }

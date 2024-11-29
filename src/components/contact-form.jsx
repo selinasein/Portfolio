@@ -43,7 +43,7 @@ export function ContactForm() {
     }
   };
   return (
-    <div className="max-w-md w-full mx-auto rounded-2xl p-10 mb-20 shadow-input bg-white dark:bg-black">
+    <div className="max-w-md w-full mx-auto rounded-2xl p-10 shadow-input bg-white dark:bg-black">
       <h2 className="font-bold text-lg text-neutral-800 dark:text-neutral-200">
         You can also contact me using this form
       </h2>

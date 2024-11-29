@@ -1,6 +1,7 @@
 import { Inter, Cormorant } from "next/font/google";
 import "./globals.css";
 import Footer from "../components/footer";
+import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,12 +18,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-slate-200 light">
       <body className="h-screen">
-        <div className={`${inter.className} ${cormorant.variable}`}>
-          {children}
-        </div>
-        <Footer />
+        <Providers>
+          <div className={`${inter.className} ${cormorant.variable}`}>
+            {children}
+          </div>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

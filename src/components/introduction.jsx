@@ -12,7 +12,7 @@ const cormorant = Cormorant({
 export default function Introduction() {
   return (
     <div
-      className={`title-header ${cormorant.className} mt-5 md:mt-0 text-5xl md:text-9xl fade-in-after-few-seconds`}
+      className={`title-header ${cormorant.className} mt-5 md:mt-0 text-5xl md:text-9xl fade-in-after-few-seconds text-black dark:text-gray-300`}
     >
       <div className="flex flew-row text-center justify-center items-center">
         <p className="md:hidden">Hi, I&apos;m Selina.</p>

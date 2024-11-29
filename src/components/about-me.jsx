@@ -12,7 +12,7 @@ const overpass = Overpass({
 
 export default function AboutMe() {
   return (
-    <>
+    <div className="text-black dark:text-gray-300">
       <p
         className={`${overpass.className} text-sm md:text-2xl`}
         style={{ lineHeight: "1.5" }}
@@ -95,6 +95,6 @@ export default function AboutMe() {
           </button>
         </Link>
       </div>
-    </>
+    </div>
   );
 }

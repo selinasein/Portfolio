@@ -16,13 +16,23 @@ const cormorant = Cormorant({
 export default function Projects() {
   return (
     <>
-      <div className="md:col-span-2 lg:col-span-3 text-center">
-        <h2 className={`${cormorant.className} text-7xl md:text-9xl`}>
+      <div className="md:col-span-2 lg:col-span-3 text-center ">
+        <h2
+          className={`${cormorant.className} text-7xl md:text-9xl text-black dark:text-gray-300`}
+        >
           Projects*
         </h2>
       </div>
       <div className="mx-10 md:m-0 mt-5 md:mt-10 rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden md:col-span-2 lg:col-span-3">
-        <InfiniteMovingCards items={skillset} direction="left" speed="slow" />
+        <div className="items-center justify-center text-center">
+          <p
+            className={`${cormorant.className} text-lg text-black dark:text-gray-300`}
+          >
+            I'm good at ...
+          </p>
+          <InfiniteMovingCards items={skillset} direction="left" speed="slow" />
+        </div>
+
         <BentoGrid className="max-w-6xl mx-auto mt-3 md:mt-10">
           {projects.map((project, i) => (
             <BentoGridItem

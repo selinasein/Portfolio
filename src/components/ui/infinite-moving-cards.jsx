@@ -75,9 +75,9 @@ export const InfiniteMovingCards = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {items.map((item, idx) => (
+        {items.map((item) => (
           <li
-            className="relative flex-shrink-0 px-4 py-2"
+            className="relative flex-shrink-0 px-4 py-2 "
             style={{
               background:
                 "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
@@ -85,18 +85,18 @@ export const InfiniteMovingCards = ({
             key={item.name}
           >
             <blockquote>
-              <div
-                aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-              ></div>
-              <span className=" relative z-20 text-sm leading-[1.6] text-gray-500 font-normal">
-                {item.category}
-              </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                  <span className=" text-sm leading-[1.6] text-gray-900 font-normal">
-                    {item.name}
-                  </span>
+              <div className="relative z-20 mt-6 flex flex-col items-center">
+                {item.icon && (
+                  <div className="mb-2">
+                    <img
+                      src={item.icon}
+                      alt={`${item.name} icon`}
+                      className="h-8 w-8 object-contain"
+                    />
+                  </div>
+                )}
+                <span className="text-sm font-normal leading-[1.6] text-gray-900 dark:text-gray-400">
+                  {item.name}
                 </span>
               </div>
             </blockquote>

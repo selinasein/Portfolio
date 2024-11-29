@@ -59,7 +59,7 @@ export const HeroParallax = ({ project }) => {
   return (
     <div
       ref={ref}
-      className="h-full w-full overflow-hidden py-40 antialiased flex flex-col self-auto [perspective:700px] [transform-style:preserve-3d] relative mb-20"
+      className="h-full w-full overflow-hidden py-10 antialiased flex flex-col self-auto [perspective:700px] [transform-style:preserve-3d] relative mb-20"
     >
       <ProjectDetail project={project} />
 
@@ -113,12 +113,12 @@ export const ProjectDetail = ({ project }) => {
   return (
     <div className="relative w-full top-0 text-center flex justify-center items-center flex-col z-10">
       <h1
-        className={`${cormorant.className} text-7xl md:text-9xl font-bold dark:text-white`}
+        className={`${cormorant.className} text-7xl text-black md:text-9xl font-bold dark:text-white `}
       >
         {project.title}*
       </h1>
       <p
-        className={`${overpass.className} max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200`}
+        className={`${overpass.className} max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200 text-black `}
       >
         {project.description}
       </p>
@@ -126,7 +126,7 @@ export const ProjectDetail = ({ project }) => {
         {project.skills.map((skill, index) => {
           return (
             <div
-              className="flex flex-wrap text-center items-center justify-center px-4 py-2 rounded-md border border-black bg-white text-neutarl-700 text-xs shadow-[4px_4px_0px_0px_rgba(0,0,0)]"
+              className="flex flex-wrap text-center items-center justify-center px-4 py-2 rounded-md border border-black bg-white text-neutarl-700 text-xs shadow-[4px_4px_0px_0px_rgba(0,0,0)] text-black"
               key={index}
             >
               {skill}
@@ -139,20 +139,20 @@ export const ProjectDetail = ({ project }) => {
           href={project.link}
           className="flex items-center justify-center mt-10 md:mt-16 text-lg md:text-2xl font-bold rounded-xl"
         >
-          <div className="relative rounded-xl shadow-lg md:shadow-2xl md:w-1/2 group">
+          <div className="relative rounded-xl shadow-lg md:shadow-2xl md:w-1/2 group group-hover:bg-gray-700">
             <img
               src={landingPageImage.img}
               alt={project.title}
-              className="w-full h-auto transition duration-300 rounded-xl ease-in-out group-hover:opacity-10"
+              className="w-full h-auto transition duration-300 rounded-xl ease-in-out"
             />
-            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out gap-3">
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 rounded-xl group-hover:opacity-100 transition duration-300 ease-in-out gap-3 bg-gray-500/50">
               <img
                 src="/icons/external-link.png"
                 alt={project.title}
                 className="w-5 h-5"
               />
               <span
-                className={`${overpass.className} text-black text-lg font-semibold`}
+                className={`${overpass.className} text-white text-lg font-semibold`}
               >
                 Visit the Website!
               </span>
@@ -161,7 +161,7 @@ export const ProjectDetail = ({ project }) => {
         </Link>
       </div>
       <p
-        className={`${overpass.className} mt-16 md:mx-40 text-sm md:text-base  dark:text-neutral-200 py-3 px-5 md:py-0 md:px-0`}
+        className={`${overpass.className} mt-16 md:mx-40 text-sm md:text-base  dark:text-neutral-200 py-3 px-5 md:py-0 md:px-0 text-black`}
       >
         {project.explanation}
       </p>
