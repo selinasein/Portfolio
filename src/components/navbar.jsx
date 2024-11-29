@@ -4,6 +4,7 @@ import React from "react";
 import { Overpass } from "next/font/google";
 import Link from "next/link";
 import { ThemeSwitcher } from "./ThemeSwitcher";
+import { useRouter } from "next/navigation";
 
 const overpass = Overpass({
   subsets: ["latin"],
@@ -13,6 +14,19 @@ const overpass = Overpass({
 });
 
 export default function Navbar() {
+  const router = useRouter();
+
+  const handleNavigation = (targetId) => {
+    if (router.pathname === "/") {
+      const section = document.querySelector(targetId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      router.push(`/?scrollTo=${targetId}`);
+    }
+  };
+
   return (
     <header className="m-auto flex py-3 px-5 md:py-5 md:px-10 dark:text-gray-300 text-gray-800 bg-transparent">
       <Link
@@ -29,13 +43,17 @@ export default function Navbar() {
         className={`menu menu-vertical rounded-box relative place-self-end md:ml-auto text-sm md:text-lg ${overpass.className} font-bold uppercase`}
       >
         <li>
-          <a href="#about-me">About Me</a>
+          <button onClick={() => handleNavigation("#about-me")}>
+            About Me
+          </button>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <button onClick={() => handleNavigation("#projects")}>
+            Projects
+          </button>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <button onClick={() => handleNavigation("#contact")}>Contact</button>
         </li>
       </ul>
     </header>

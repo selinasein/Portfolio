@@ -28,7 +28,7 @@ export default function Projects() {
           <p
             className={`${cormorant.className} text-lg text-black dark:text-gray-300`}
           >
-            I'm good at ...
+            I&apos;m good at ...
           </p>
           <InfiniteMovingCards items={skillset} direction="left" speed="slow" />
         </div>

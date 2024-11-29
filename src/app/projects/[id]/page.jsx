@@ -9,7 +9,7 @@ export default function PostPage({ params }) {
   const project = getProjectById(params.id);
 
   return (
-    <div>
+    <div className="dark:bg-zinc-900 bg-slate-200">
       <Navbar />
       <HeroParallax project={project} />
     </div>

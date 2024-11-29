@@ -59,7 +59,7 @@ export const HeroParallax = ({ project }) => {
   return (
     <div
       ref={ref}
-      className="h-full w-full overflow-hidden py-10 antialiased flex flex-col self-auto [perspective:700px] [transform-style:preserve-3d] relative mb-20"
+      className="h-full w-full overflow-hidden py-10 antialiased flex flex-col self-auto [perspective:700px] [transform-style:preserve-3d] relative "
     >
       <ProjectDetail project={project} />
 
