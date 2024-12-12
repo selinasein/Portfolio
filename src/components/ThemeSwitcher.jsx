@@ -1,13 +1,23 @@
 "use client";
 
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react"; //
 
 export function ThemeSwitcher() {
   const { theme, setTheme, resolvedTheme } = useTheme();
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const isDark =
     theme === "dark" || (theme === undefined && resolvedTheme === "dark");
-    
+
+  if (!isMounted) {
+    return null;
+  }
+
   return (
     <label className="flex cursor-pointer gap-2 items-center">
       <svg

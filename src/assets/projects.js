@@ -107,7 +107,7 @@ export const projects = [
     description: "AI powered career development app",
     thumbnail: "/images/cocoon/cocoon_thumbnail.png",
     explanation:
-      "Cocoon is a career development app that utilizes AI technology. It scans resumes and analyzes skills to suggest relevant courses and programs for users' desired job industry. Cocoon aims to help people realize their full potential and provide a detailed roadmap to reach their career goals. It uses data from The Occupational Information Network for current job market insights, which users can tailor to their career path. The recommended courses and programs, derived from AI analysis of users' skills and assets, are sourced from BCIT and Udemy.",
+      "Cocoon is a career development app designed specifically for immigrants to Canada, supporting a seamless transition into the Canadian job market. The app utilizes AI to analyze resumes, evaluate existing skills, and identify any skill gaps based on current market demands. Leveraging data from The Occupational Information Network (O*NET), Cocoon generates tailored job recommendations that match users' skillsets. For identified gaps, it suggests relevant courses and programs from BCIT and Udemy, helping users bridge the gap and achieve their career aspirations. This personalized roadmap empowers immigrants to confidently navigate their professional journey in Canada.",
     link: "https://www.cocoon.quest/",
     skills: [
       "TypeScript",
